@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/access_home"
+        android:enabled="true"
+        android:icon = "@drawable/baseline_home_24"
+        android:title="ホームに戻る"/>
+
+    <item android:id="@+id/access_recommend"
+        android:enabled="true"
+        android:icon = "@drawable/baseline_star_border_24"
+        android:title="お気に入り一覧"/>
+
+</menu>

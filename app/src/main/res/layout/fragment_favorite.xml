@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_s"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/favorite_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:focusable="true"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/favorite_img"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/recipe_001"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/favorite_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#B8A816"
+            android:text="おすすめ"
+            android:textColor="@color/white"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/favorite_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="洋食屋さんのハンバーグ"
+            android:textColor="#E91E1E"
+            android:textSize="20dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/favorite_explain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="味も見た目もよし！のハンバーグです。"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:titleTextColor="#FF5722" />
+
+    <ImageView
+        android:id="@+id/recipe_img"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/recipe_001"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/recipe_explain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="味も見た目もよし！のハンバーグです。"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_spoon" />
+
+    <TableLayout
+        android:id="@+id/recipe_material"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="20dp">
+
+        <TableRow android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/material"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:background="#D3D1D1"
+                android:text="合いびき肉"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:text="200g"
+                android:textSize="18sp" />
+        </TableRow>
+    </TableLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:src="@drawable/procedure" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="20dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/procedure_no"
+                android:layout_width="25dp"
+                android:layout_height="75dp"
+                android:layout_margin="2dp"
+                android:background="#D3D1D1"
+                android:text="1"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/procedure"
+                android:layout_width="370dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:ellipsize="end"
+                android:lineSpacingExtra="20dp"
+                android:text="玉ねぎはみじん切りにし、●以外の材料すべてをボウルに入れて手でよくこねる。"
+                android:textSize="18sp" />
+
+        </TableRow>
+    </TableLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+
+        <ImageButton
+            android:id="@+id/recommend_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="no"
+            android:background="@drawable/round"
+            android:src="@drawable/recommend_off" />
+
+    </LinearLayout>
+
+</LinearLayout>
